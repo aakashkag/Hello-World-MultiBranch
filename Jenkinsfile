@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Build Stage'
+                echo "current build number: ${currentBuild.number}"
             }
         }
         stage('QA') {
